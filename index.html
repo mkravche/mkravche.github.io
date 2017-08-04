@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Kravchenko</title>
+</head>
+
+<body>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!" class="blue-text text-darken-4">one</a></li>
+        <li><a href="#!" class="blue-text text-darken-4">two</a></li>
+        <li class="divider" class="blue-text text-darken-4"></li>
+        <li><a href="#!" class="blue-text text-darken-4">three</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper blue darken-4">
+            <a href="#" class="brand-logo right">MK</a>
+
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <center><img src=PTFE.png></center>
+    <h1>PAGE IN-WORK</h1>
+    <h1 id="About">About</h1>
+    <p> text... link test: <a href="https://google.com">Google.com</a></p>
+
+    <h1 id="Projects">Projects</h1>
+    <p> text... link test: <a href="https://google.com">Google.com</a></p>
+    <h1 id="Contact">Contact</h1>
+    <p> text... link test: <a href="https://google.com">Google.com</a></p>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-button").dropdown();
+            $(".button-collapse").sideNav();
+        })
+    </script>
+</body>
+
+</html>
